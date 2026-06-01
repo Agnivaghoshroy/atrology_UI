@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divya Jyotish - Ancient Wisdom. Modern Guidance.</title>
-    <meta name="description" content="Experience the power of Vedic Astrology, Palmistry, Numerology & Vastu with Acharya Dr. Raghav Sharma. Get clarity, peace and the right direction in life.">
+    <meta name="description"
+        content="Experience the power of Vedic Astrology, Palmistry, Numerology & Vastu with Acharya Dr. Raghav Sharma. Get clarity, peace and the right direction in life.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
         tailwind.config = {
@@ -35,47 +39,87 @@
         }
     </script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
 
         /* Marquee animation */
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
+
         .marquee-track {
             animation: marquee 30s linear infinite;
         }
+
         .marquee-track:hover {
             animation-play-state: paused;
         }
 
         /* Floating animation for decorative elements */
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
+
         .float-animation {
             animation: float 3s ease-in-out infinite;
         }
 
         /* Pulse glow for CTA */
         @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 0 5px rgba(232,112,10,0.4); }
-            50% { box-shadow: 0 0 20px rgba(232,112,10,0.8); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 5px rgba(232, 112, 10, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(232, 112, 10, 0.8);
+            }
         }
+
         .pulse-glow {
             animation: pulseGlow 2s ease-in-out infinite;
         }
 
         /* Smooth scroll */
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         /* Chat bubble typing */
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .fade-in-up {
             animation: fadeInUp 0.5s ease-out;
         }
@@ -83,25 +127,26 @@
         /* Zodiac card hover */
         .zodiac-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(232,112,10,0.15);
+            box-shadow: 0 8px 25px rgba(232, 112, 10, 0.15);
         }
 
         /* Service card hover */
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
         }
 
         /* Testimonial card */
         .testimonial-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         /* Nav link hover underline */
         .nav-link {
             position: relative;
         }
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -112,20 +157,30 @@
             background: #E8700A;
             transition: width 0.3s ease;
         }
+
         .nav-link:hover::after {
             width: 100%;
         }
 
         /* Scrollbar styling */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #FFF8F0; }
-        ::-webkit-scrollbar-thumb { background: #E8700A; border-radius: 4px; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FFF8F0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #E8700A;
+            border-radius: 4px;
+        }
 
         /* Hero background pattern */
         .hero-bg-pattern {
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(232,112,10,0.05) 0%, transparent 50%),
-                radial-gradient(circle at 90% 80%, rgba(107,29,29,0.05) 0%, transparent 50%);
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(232, 112, 10, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(107, 29, 29, 0.05) 0%, transparent 50%);
         }
 
         /* Gradient text */
@@ -147,6 +202,7 @@
         }
     </style>
 </head>
+
 <body class="bg-white">
 
     <!-- ====== TOP MARQUEE BAR ====== -->
@@ -157,7 +213,8 @@
                     <span class="text-yellow-400">✦</span> || Om Namah Shivaya || <span class="text-yellow-400">✦</span>
                 </span>
                 <span class="flex items-center gap-2 text-xs sm:text-sm">
-                    <span class="text-yellow-400">✦</span> Trust in the Divine. Receive Divine Guidance. <span class="text-yellow-400">✦</span>
+                    <span class="text-yellow-400">✦</span> Trust in the Divine. Receive Divine Guidance. <span
+                        class="text-yellow-400">✦</span>
                 </span>
                 <span class="flex items-center gap-2 text-xs sm:text-sm">
                     <i class="fas fa-phone-alt text-yellow-400"></i> Talk to Astrologer
@@ -171,7 +228,8 @@
                     <span class="text-yellow-400">✦</span> || Om Namah Shivaya || <span class="text-yellow-400">✦</span>
                 </span>
                 <span class="flex items-center gap-2 text-xs sm:text-sm">
-                    <span class="text-yellow-400">✦</span> Trust in the Divine. Receive Divine Guidance. <span class="text-yellow-400">✦</span>
+                    <span class="text-yellow-400">✦</span> Trust in the Divine. Receive Divine Guidance. <span
+                        class="text-yellow-400">✦</span>
                 </span>
                 <span class="flex items-center gap-2 text-xs sm:text-sm">
                     <i class="fas fa-phone-alt text-yellow-400"></i> Talk to Astrologer
@@ -189,42 +247,62 @@
             <div class="flex items-center justify-between h-16 lg:h-20">
                 <!-- Logo -->
                 <a href="#" class="flex items-center gap-3 flex-shrink-0">
-                    <img src="images/om_logo.png" alt="Divya Jyotish" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                    <img src="images/om_logo.png" alt="Divya Jyotish"
+                        class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                     <div>
-                        <h1 class="text-lg sm:text-xl font-bold text-maroon font-playfair leading-tight">Divya Jyotish</h1>
-                        <p class="text-[10px] sm:text-xs text-gray-500 leading-tight">Ancient Wisdom. Modern Guidance.</p>
+                        <h1 class="text-lg sm:text-xl font-bold text-maroon font-playfair leading-tight">Divya Jyotish
+                        </h1>
+                        <p class="text-[10px] sm:text-xs text-gray-500 leading-tight">Ancient Wisdom. Modern Guidance.
+                        </p>
                     </div>
                 </a>
 
                 <!-- Desktop Nav Links -->
                 <div class="hidden lg:flex items-center gap-6 xl:gap-8">
                     <a href="#" class="nav-link text-saffron font-semibold text-sm">Home</a>
-                    <a href="#about" class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">About Us</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">About
+                        Us</a>
                     <div class="relative group">
-                        <a href="#services" class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm flex items-center gap-1">
+                        <a href="#services"
+                            class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm flex items-center gap-1">
                             Services <i class="fas fa-chevron-down text-[10px]"></i>
                         </a>
-                        <div class="absolute top-full left-0 mt-2 bg-white shadow-xl rounded-lg py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
-                            <a href="#services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Birth Chart Analysis</a>
-                            <a href="#services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Palm Reading</a>
-                            <a href="#services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Vedic Astrology</a>
-                            <a href="#services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Numerology</a>
-                            <a href="#services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Vastu Shastra</a>
+                        <div
+                            class="absolute top-full left-0 mt-2 bg-white shadow-xl rounded-lg py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <a href="#services"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Birth
+                                Chart Analysis</a>
+                            <a href="#services"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Palm
+                                Reading</a>
+                            <a href="#services"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Vedic
+                                Astrology</a>
+                            <a href="#services"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Numerology</a>
+                            <a href="#services"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-saffron-light hover:text-saffron transition-colors">Vastu
+                                Shastra</a>
                         </div>
                     </div>
-                    <a href="#zodiac" class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">Horoscope</a>
+                    <a href="#zodiac"
+                        class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">Horoscope</a>
                     <a href="#" class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">Blog</a>
-                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">Testimonials</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">Contact Us</a>
+                    <a href="#testimonials"
+                        class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">Testimonials</a>
+                    <a href="#contact"
+                        class="nav-link text-gray-700 hover:text-saffron transition-colors text-sm">Contact Us</a>
                 </div>
 
                 <!-- Consult Now Button (Desktop) -->
-                <a href="#" class="hidden lg:inline-flex items-center gap-2 bg-saffron hover:bg-saffron-dark text-white font-semibold px-5 py-2.5 rounded-full transition-all duration-300 pulse-glow text-sm">
+                <a href="#"
+                    class="hidden lg:inline-flex items-center gap-2 bg-saffron hover:bg-saffron-dark text-white font-semibold px-5 py-2.5 rounded-full transition-all duration-300 pulse-glow text-sm">
                     Consult Now
                 </a>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" class="lg:hidden p-2 text-maroon hover:text-saffron transition-colors" aria-label="Toggle menu">
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-maroon hover:text-saffron transition-colors"
+                    aria-label="Toggle menu">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
@@ -233,15 +311,26 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
             <div class="px-4 py-4 space-y-1">
-                <a href="#" class="block py-2.5 px-3 text-saffron font-semibold rounded-lg bg-saffron-light text-sm">Home</a>
-                <a href="#about" class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">About Us</a>
-                <a href="#services" class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Services</a>
-                <a href="#zodiac" class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Horoscope</a>
-                <a href="#" class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Blog</a>
-                <a href="#testimonials" class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Testimonials</a>
-                <a href="#contact" class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Contact Us</a>
+                <a href="#"
+                    class="block py-2.5 px-3 text-saffron font-semibold rounded-lg bg-saffron-light text-sm">Home</a>
+                <a href="#about"
+                    class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">About
+                    Us</a>
+                <a href="#services"
+                    class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Services</a>
+                <a href="#zodiac"
+                    class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Horoscope</a>
+                <a href="#"
+                    class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Blog</a>
+                <a href="#testimonials"
+                    class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Testimonials</a>
+                <a href="#contact"
+                    class="block py-2.5 px-3 text-gray-700 hover:text-saffron hover:bg-saffron-light rounded-lg transition-colors text-sm">Contact
+                    Us</a>
                 <div class="pt-3">
-                    <a href="#" class="block text-center bg-saffron text-white font-semibold py-2.5 rounded-full hover:bg-saffron-dark transition-colors text-sm">Consult Now</a>
+                    <a href="#"
+                        class="block text-center bg-saffron text-white font-semibold py-2.5 rounded-full hover:bg-saffron-dark transition-colors text-sm">Consult
+                        Now</a>
                 </div>
             </div>
         </div>
@@ -258,14 +347,15 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <!-- Left Content -->
                 <div class="order-2 lg:order-1 text-center lg:text-left">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-maroon-dark font-playfair leading-tight mb-4">
+                    <h2
+                        class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-maroon-dark font-playfair leading-tight mb-4">
                         Right Guidance,<br>
                         Bright Future.
                     </h2>
                     <p class="text-lg sm:text-xl lg:text-2xl text-saffron font-playfair italic mb-3">
                         Ancient Wisdom. Accurate Predictions.
                     </p>
-                    
+
                     <!-- Decorative divider -->
                     <div class="flex items-center justify-center lg:justify-start gap-2 mb-4">
                         <div class="w-12 h-px bg-saffron"></div>
@@ -274,34 +364,39 @@
                     </div>
 
                     <p class="text-sm sm:text-base text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                        Experience the power of Vedic Astrology, Palmistry, Numerology & Vastu. Get clarity, peace and the right direction in life.
+                        Experience the power of Vedic Astrology, Palmistry, Numerology & Vastu. Get clarity, peace and
+                        the right direction in life.
                     </p>
 
                     <!-- Stats -->
                     <div class="grid grid-cols-4 gap-3 sm:gap-6 mb-8 max-w-lg mx-auto lg:mx-0">
                         <div class="text-center">
-                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
                                 <i class="fas fa-users text-saffron text-sm sm:text-base"></i>
                             </div>
                             <p class="text-lg sm:text-xl font-bold text-maroon">1M+</p>
                             <p class="text-[10px] sm:text-xs text-gray-500">Happy Clients</p>
                         </div>
                         <div class="text-center">
-                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
                                 <i class="fas fa-trophy text-saffron text-sm sm:text-base"></i>
                             </div>
                             <p class="text-lg sm:text-xl font-bold text-maroon">15+</p>
                             <p class="text-[10px] sm:text-xs text-gray-500">Years of Experience</p>
                         </div>
                         <div class="text-center">
-                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
                                 <i class="fas fa-shield-alt text-saffron text-sm sm:text-base"></i>
                             </div>
                             <p class="text-lg sm:text-xl font-bold text-maroon">100%</p>
                             <p class="text-[10px] sm:text-xs text-gray-500">Trusted & Confidential</p>
                         </div>
                         <div class="text-center">
-                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-saffron-light rounded-full flex items-center justify-center mx-auto mb-2">
                                 <i class="fas fa-headset text-saffron text-sm sm:text-base"></i>
                             </div>
                             <p class="text-lg sm:text-xl font-bold text-maroon">24/7</p>
@@ -311,10 +406,12 @@
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-                        <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-saffron hover:bg-saffron-dark text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-sm">
+                        <a href="#"
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-saffron hover:bg-saffron-dark text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-sm">
                             Consult Now <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="#zodiac" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-maroon text-maroon hover:bg-maroon hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-sm">
+                        <a href="#zodiac"
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-maroon text-maroon hover:bg-maroon hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-sm">
                             View Horoscope <i class="fas fa-calendar-alt"></i>
                         </a>
                     </div>
@@ -329,37 +426,34 @@
                         </div>
                         <!-- Astrologer Image -->
                         <div class="relative z-10">
-                            <img src="images/astrologer.png" alt="Acharya Dr. Raghav Sharma" class="w-full h-auto rounded-2xl max-h-[500px] object-cover object-top mx-auto">
+                            <img src="images/Person.png" alt="Acharya Dr. Raghav Sharma"
+                                class="w-full h-auto rounded-2xl max-h-[500px] object-cover object-top mx-auto">
                         </div>
 
                         <!-- Astrologer Info Card -->
-                        <div class="absolute bottom-4 right-0 sm:right-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-3 sm:p-4 max-w-xs z-20 border border-gray-100">
-                            <div class="flex items-start gap-3">
-                                <div>
-                                    <div class="flex items-center gap-2 mb-1">
-                                        <h3 class="text-sm sm:text-base font-bold text-maroon">Acharya Dr. Raghav Sharma</h3>
-                                        <i class="fas fa-check-circle text-blue-500 text-sm"></i>
-                                    </div>
-                                    <p class="text-xs text-saffron font-medium mb-2">Vedic Astrologer & Spiritual Guide</p>
-                                    <div class="flex flex-wrap gap-x-2 gap-y-1 text-[10px] sm:text-xs text-gray-600 mb-2">
-                                        <span>Vedic Astrology</span>
-                                        <span class="text-saffron">•</span>
-                                        <span>KP Astrology</span>
-                                        <span class="text-saffron">•</span>
-                                        <span>Vastu Expert</span>
-                                        <span class="text-saffron">•</span>
-                                        <span>Numerology</span>
-                                        <span class="text-saffron">•</span>
-                                        <span>Palmistry</span>
-                                        <span class="text-saffron">•</span>
-                                        <span>Gemstone Consultant</span>
-                                    </div>
-                                    <div class="flex items-center gap-1">
-                                        <i class="fas fa-star text-yellow-500 text-xs"></i>
-                                        <span class="text-xs font-semibold text-gray-700">4.9</span>
-                                        <span class="text-xs text-gray-500">(2500+ Reviews)</span>
-                                    </div>
+                        <div
+                            class="absolute bottom-4 left-[35%] sm:left-[45%] bg-maroon-dark rounded-xl shadow-xl py-3 px-6 w-max z-20 border border-maroon">
+                            <div class="flex items-center gap-2 mb-0.5">
+                                <h3 class="text-sm font-bold text-white whitespace-nowrap">Acharya Dr. Raghav</h3>
+                                <i class="fas fa-check-circle text-saffron text-xs flex-shrink-0"></i>
+                            </div>
+                            <p class="text-[10px] text-saffron font-medium mb-1.5 whitespace-nowrap">Vedic Astrologer
+                            </p>
+
+                            <div class="flex items-center gap-x-1.5 text-[9px] text-white mb-2 whitespace-nowrap">
+                                <span>Vedic</span>
+                                <span class="text-saffron">•</span>
+                                <span>Vastu</span>
+                                <span class="text-saffron">•</span>
+                                <span>Numerology</span>
+                            </div>
+
+                            <div class="flex items-center gap-1.5 border-t border-white/20 pt-2 whitespace-nowrap">
+                                <div class="flex items-center gap-1">
+                                    <i class="fas fa-star text-yellow-500 text-[10px]"></i>
+                                    <span class="text-[11px] font-bold text-white">4.9</span>
                                 </div>
+                                <span class="text-[9px] text-white/90 font-medium">(2500+ Reviews)</span>
                             </div>
                         </div>
                     </div>
@@ -373,7 +467,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
                 <a href="#services" class="flex items-center gap-3 text-white group cursor-pointer">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                    <div
+                        class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
                         <i class="fas fa-chart-pie text-saffron text-lg"></i>
                     </div>
                     <div>
@@ -382,7 +477,8 @@
                     </div>
                 </a>
                 <a href="#services" class="flex items-center gap-3 text-white group cursor-pointer">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                    <div
+                        class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
                         <i class="fas fa-hand-sparkles text-saffron text-lg"></i>
                     </div>
                     <div>
@@ -391,7 +487,8 @@
                     </div>
                 </a>
                 <a href="#zodiac" class="flex items-center gap-3 text-white group cursor-pointer">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                    <div
+                        class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
                         <i class="fas fa-sun text-saffron text-lg"></i>
                     </div>
                     <div>
@@ -400,7 +497,8 @@
                     </div>
                 </a>
                 <a href="#services" class="flex items-center gap-3 text-white group cursor-pointer">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                    <div
+                        class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
                         <i class="fas fa-heart text-saffron text-lg"></i>
                     </div>
                     <div>
@@ -409,7 +507,8 @@
                     </div>
                 </a>
                 <a href="#" class="flex items-center gap-3 text-white group cursor-pointer col-span-2 sm:col-span-1">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                    <div
+                        class="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
                         <i class="fas fa-question-circle text-saffron text-lg"></i>
                     </div>
                     <div>
@@ -425,68 +524,82 @@
     <section id="zodiac" class="py-12 sm:py-16 bg-warm-gray">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-                
+
                 <!-- Zodiac Signs -->
                 <div class="lg:col-span-4">
                     <div class="text-center lg:text-left mb-6">
-                        <h2 class="text-2xl sm:text-3xl font-bold text-maroon font-playfair inline-flex items-center gap-2">
+                        <h2
+                            class="text-2xl sm:text-3xl font-bold text-maroon font-playfair inline-flex items-center gap-2">
                             <span class="text-saffron">✦</span> Zodiac Signs <span class="text-saffron">✦</span>
                         </h2>
                     </div>
-                    
+
                     <div class="bg-white rounded-2xl shadow-md p-4 sm:p-6">
                         <div class="grid grid-cols-4 gap-3">
                             <!-- Zodiac signs -->
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♈</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Aries</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♉</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Taurus</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♊</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Gemini</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♋</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Cancer</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♌</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Leo</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♍</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Virgo</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♎</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Libra</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♏</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Scorpio</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♐</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Sagittarius</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♑</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Capricorn</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♒</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Aquarius</p>
                             </div>
-                            <div class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
+                            <div
+                                class="zodiac-card text-center p-2 sm:p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-saffron-light">
                                 <div class="text-2xl sm:text-3xl mb-1">♓</div>
                                 <p class="text-[10px] sm:text-xs font-medium text-gray-700">Pisces</p>
                             </div>
                         </div>
-                        <a href="#" class="mt-4 inline-flex items-center gap-2 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
+                        <a href="#"
+                            class="mt-4 inline-flex items-center gap-2 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
                             View All Zodiac Signs <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -507,70 +620,90 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                         <!-- Birth Chart Analysis -->
-                        <div class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
                             <div class="h-40 overflow-hidden">
-                                <img src="images/scroll.png" alt="Birth Chart Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="images/Birth Chart.png" alt="Birth Chart Analysis"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-bold text-maroon text-base mb-2">Birth Chart Analysis</h3>
-                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Detailed analysis of your Kundli to know your strengths, weaknesses & life path.</p>
-                                <a href="#" class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
+                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Detailed analysis of your Kundli
+                                    to know your strengths, weaknesses & life path.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
                                     Learn More <i class="fas fa-arrow-right text-xs"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Palm Reading -->
-                        <div class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
                             <div class="h-40 overflow-hidden">
-                                <img src="images/palm.png" alt="Palm Reading" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="images/Palm Reading.png" alt="Palm Reading"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-bold text-maroon text-base mb-2">Palm Reading</h3>
-                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Discover the secrets hidden in your palm lines and shape your future.</p>
-                                <a href="#" class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
+                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Discover the secrets hidden in
+                                    your palm lines and shape your future.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
                                     Learn More <i class="fas fa-arrow-right text-xs"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Vedic Astrology -->
-                        <div class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
                             <div class="h-40 overflow-hidden">
-                                <img src="images/vedic.png" alt="Vedic Astrology Consultation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="images/Vedic astrology.png" alt="Vedic Astrology Consultation"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-bold text-maroon text-base mb-2">Vedic Astrology Consultation</h3>
-                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Solutions for career, health, finance, marriage & more.</p>
-                                <a href="#" class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
+                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Solutions for career, health,
+                                    finance, marriage & more.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
                                     Learn More <i class="fas fa-arrow-right text-xs"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Numerology -->
-                        <div class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
                             <div class="h-40 overflow-hidden">
-                                <img src="images/numerology.png" alt="Numerology Reading" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="images/Numerology Reading.png" alt="Numerology Reading"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-bold text-maroon text-base mb-2">Numerology Reading</h3>
-                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Decode numbers that influence your life and destiny.</p>
-                                <a href="#" class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
+                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Decode numbers that influence your
+                                    life and destiny.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
                                     Learn More <i class="fas fa-arrow-right text-xs"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Vastu Shastra -->
-                        <div class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
+                        <div
+                            class="service-card bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer group">
                             <div class="h-40 overflow-hidden">
-                                <img src="images/vastu.png" alt="Vastu Shastra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="images/Vastu Shastra.png" alt="Vastu Shastra"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-bold text-maroon text-base mb-2">Vastu Shastra</h3>
-                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Bring harmony and positivity in your home, office and workplace.</p>
-                                <a href="#" class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
+                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">Bring harmony and positivity in
+                                    your home, office and workplace.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-saffron font-semibold text-sm hover:text-saffron-dark transition-colors">
                                     Learn More <i class="fas fa-arrow-right text-xs"></i>
                                 </a>
                             </div>
@@ -596,7 +729,8 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <!-- Left: Report Image -->
                     <div class="flex justify-center">
-                        <img src="images/report_bg.png" alt="Birth Chart Report" class="w-64 sm:w-80 rounded-xl shadow-2xl">
+                        <img src="images/report_bg.png" alt="Birth Chart Report"
+                            class="w-64 sm:w-80 rounded-xl shadow-2xl">
                     </div>
 
                     <!-- Right: CTA Content -->
@@ -623,12 +757,16 @@
                             </li>
                         </ul>
 
-                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
-                            <a href="#" class="inline-flex items-center gap-2 bg-saffron hover:bg-saffron-dark text-white font-bold px-7 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base pulse-glow">
+                        <div
+                            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
+                            <a href="#"
+                                class="inline-flex items-center gap-2 bg-saffron hover:bg-saffron-dark text-white font-bold px-7 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base pulse-glow">
                                 Get My Report <i class="fas fa-arrow-right"></i>
                             </a>
                             <div class="text-center">
-                                <div class="bg-yellow-400 text-maroon-dark text-xs font-bold px-3 py-1 rounded-full mb-1">Special Offer</div>
+                                <div
+                                    class="bg-yellow-400 text-maroon-dark text-xs font-bold px-3 py-1 rounded-full mb-1">
+                                    Special Offer</div>
                                 <p class="text-3xl sm:text-4xl font-bold text-white">₹299</p>
                                 <p class="text-xs text-gray-300">Limited Time Only</p>
                             </div>
@@ -639,75 +777,6 @@
         </div>
     </section>
 
-    <!-- ====== CHAT WIDGET (floating) ====== -->
-    <div id="chatWidget" class="fixed bottom-6 right-6 z-50 hidden">
-        <div class="bg-white rounded-2xl shadow-2xl w-80 sm:w-96 overflow-hidden border border-gray-200">
-            <!-- Chat Header -->
-            <div class="bg-gradient-to-r from-maroon to-maroon-dark p-4 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <img src="images/astrologer.png" alt="Acharya Ji" class="w-10 h-10 rounded-full object-cover border-2 border-white">
-                    <div>
-                        <p class="text-white font-semibold text-sm">Chat with Acharya Ji</p>
-                    </div>
-                </div>
-                <button onclick="toggleChat()" class="text-white hover:text-gray-300 transition-colors">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-
-            <!-- Chat Header Info -->
-            <div class="px-4 py-3 border-b border-gray-100 flex items-center gap-3">
-                <img src="images/astrologer.png" alt="" class="w-8 h-8 rounded-full object-cover">
-                <div>
-                    <p class="text-sm font-semibold text-gray-800">Acharya Dr. Raghav Sharma</p>
-                    <div class="flex items-center gap-1">
-                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-                        <span class="text-xs text-green-600">Online</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Chat Messages -->
-            <div class="p-4 h-48 overflow-y-auto bg-gray-50 space-y-3">
-                <div class="flex gap-2">
-                    <img src="images/astrologer.png" alt="" class="w-6 h-6 rounded-full object-cover flex-shrink-0 mt-1">
-                    <div class="bg-white rounded-lg rounded-tl-none p-3 shadow-sm max-w-[80%]">
-                        <p class="text-sm text-gray-700">Namaste! 🙏</p>
-                        <p class="text-sm text-gray-700 mt-1">How can I guide you today?</p>
-                        <p class="text-sm text-gray-700 mt-1">You can ask me about your life, career, health, relationships or any other concerns.</p>
-                        <p class="text-[10px] text-gray-400 mt-1">10:30 AM</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quick Replies -->
-            <div class="px-4 py-2 border-t border-gray-100 flex flex-wrap gap-2">
-                <button class="text-xs border border-saffron text-saffron px-3 py-1.5 rounded-full hover:bg-saffron hover:text-white transition-colors">Career Guidance</button>
-                <button class="text-xs border border-saffron text-saffron px-3 py-1.5 rounded-full hover:bg-saffron hover:text-white transition-colors">Love & Relationship</button>
-                <button class="text-xs border border-saffron text-saffron px-3 py-1.5 rounded-full hover:bg-saffron hover:text-white transition-colors">Health & Wellness</button>
-                <button class="text-xs border border-saffron text-saffron px-3 py-1.5 rounded-full hover:bg-saffron hover:text-white transition-colors">General Question</button>
-            </div>
-
-            <!-- Chat Input -->
-            <div class="p-3 border-t border-gray-100 flex items-center gap-2">
-                <input type="text" placeholder="Type your message..." class="flex-1 text-sm px-3 py-2 border border-gray-200 rounded-full focus:outline-none focus:border-saffron transition-colors">
-                <button class="w-9 h-9 bg-saffron text-white rounded-full flex items-center justify-center hover:bg-saffron-dark transition-colors">
-                    <i class="fas fa-paper-plane text-sm"></i>
-                </button>
-            </div>
-
-            <!-- Confidential note -->
-            <div class="px-4 py-2 bg-gray-50 border-t border-gray-100 flex items-center gap-2">
-                <i class="fas fa-lock text-gray-400 text-xs"></i>
-                <p class="text-[10px] text-gray-400">Your conversations are 100% confidential</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Chat Toggle Button -->
-    <button id="chatToggleBtn" onclick="toggleChat()" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-saffron hover:bg-saffron-dark text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 pulse-glow">
-        <i class="fas fa-comments text-xl"></i>
-    </button>
 
     <!-- ====== TESTIMONIALS ====== -->
     <section id="testimonials" class="py-12 sm:py-16 bg-white">
@@ -728,14 +797,16 @@
                 <div class="testimonial-card bg-warm-gray rounded-2xl p-5 sm:p-6 transition-all duration-300 relative">
                     <div class="text-4xl text-saffron/30 font-playfair absolute top-4 left-4">"</div>
                     <p class="text-sm text-gray-600 mb-4 mt-6 leading-relaxed italic">
-                        Acharya Ji's guidance completely changed my life. His predictions are accurate and remedies are simple yet powerful.
+                        Acharya Ji's guidance completely changed my life. His predictions are accurate and remedies are
+                        simple yet powerful.
                     </p>
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="font-semibold text-maroon text-sm">~ Anjali Verma</p>
                             <p class="text-xs text-gray-500">Jaipur</p>
                         </div>
-                        <img src="images/testimonial1.png" alt="Anjali Verma" class="w-10 h-10 rounded-full object-cover">
+                        <img src="images/testimonial1.png" alt="Anjali Verma"
+                            class="w-10 h-10 rounded-full object-cover">
                     </div>
                 </div>
 
@@ -750,7 +821,8 @@
                             <p class="font-semibold text-maroon text-sm">~ Rohit Mehta</p>
                             <p class="text-xs text-gray-500">Bangalore</p>
                         </div>
-                        <img src="images/testimonial2.png" alt="Rohit Mehta" class="w-10 h-10 rounded-full object-cover">
+                        <img src="images/testimonial2.png" alt="Rohit Mehta"
+                            class="w-10 h-10 rounded-full object-cover">
                     </div>
                 </div>
 
@@ -765,7 +837,8 @@
                             <p class="font-semibold text-maroon text-sm">~ Priya Singh</p>
                             <p class="text-xs text-gray-500">Mumbai</p>
                         </div>
-                        <img src="images/testimonial3.png" alt="Priya Singh" class="w-10 h-10 rounded-full object-cover">
+                        <img src="images/testimonial3.png" alt="Priya Singh"
+                            class="w-10 h-10 rounded-full object-cover">
                     </div>
                 </div>
             </div>
@@ -840,19 +913,24 @@
                         </div>
                     </div>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                        Your trusted partner in Vedic Astrology, Palmistry, Numerology, Vastu & more. Guiding you towards a happy, successful and peaceful life.
+                        Your trusted partner in Vedic Astrology, Palmistry, Numerology, Vastu & more. Guiding you
+                        towards a happy, successful and peaceful life.
                     </p>
                     <div class="flex items-center gap-3">
-                        <a href="#" class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
+                        <a href="#"
+                            class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
                             <i class="fab fa-facebook-f text-sm"></i>
                         </a>
-                        <a href="#" class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
+                        <a href="#"
+                            class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
                             <i class="fab fa-instagram text-sm"></i>
                         </a>
-                        <a href="#" class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
+                        <a href="#"
+                            class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
                             <i class="fab fa-youtube text-sm"></i>
                         </a>
-                        <a href="#" class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
+                        <a href="#"
+                            class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-saffron transition-colors">
                             <i class="fab fa-twitter text-sm"></i>
                         </a>
                     </div>
@@ -862,13 +940,27 @@
                 <div>
                     <h4 class="text-base font-bold mb-4 text-white">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#about" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> About Us</a></li>
-                        <li><a href="#" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Our Astrologers</a></li>
-                        <li><a href="#services" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Services</a></li>
-                        <li><a href="#zodiac" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Horoscope</a></li>
-                        <li><a href="#" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Blog</a></li>
-                        <li><a href="#testimonials" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Testimonials</a></li>
-                        <li><a href="#contact" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Contact Us</a></li>
+                        <li><a href="#about"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> About Us</a></li>
+                        <li><a href="#"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Our Astrologers</a></li>
+                        <li><a href="#services"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Services</a></li>
+                        <li><a href="#zodiac"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Horoscope</a></li>
+                        <li><a href="#"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Blog</a></li>
+                        <li><a href="#testimonials"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Testimonials</a></li>
+                        <li><a href="#contact"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -876,13 +968,32 @@
                 <div>
                     <h4 class="text-base font-bold mb-4 text-white">Our Services</h4>
                     <ul class="space-y-2">
-                        <li><a href="#services" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Birth Chart Analysis</a></li>
-                        <li><a href="#services" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Palmistry Reading</a></li>
-                        <li><a href="#services" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Vedic Astrology</a></li>
-                        <li><a href="#services" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Numerology Reading</a></li>
-                        <li><a href="#services" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Vastu Consultation</a></li>
-                        <li><a href="#" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Gemstone Recommendation</a></li>
-                        <li><a href="#" class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-saffron"></i> Kundli Matching</a></li>
+                        <li><a href="#services"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Birth Chart Analysis</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Palmistry Reading</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Vedic Astrology</a></li>
+                        <li><a href="#services"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Numerology Reading</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Vastu Consultation</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Gemstone
+                                Recommendation</a></li>
+                        <li><a href="#"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-[10px] text-saffron"></i> Kundli Matching</a></li>
                     </ul>
                 </div>
 
@@ -891,25 +1002,31 @@
                     <h4 class="text-base font-bold mb-4 text-white">Contact Us</h4>
                     <ul class="space-y-3">
                         <li class="flex items-center gap-3">
-                            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-phone-alt text-saffron text-sm"></i>
                             </div>
-                            <a href="tel:+919876543210" class="text-sm text-gray-300 hover:text-saffron transition-colors">+91 98765 43210</a>
+                            <a href="tel:+919876543210"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors">+91 98765 43210</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-envelope text-saffron text-sm"></i>
                             </div>
-                            <a href="mailto:support@divyajyotish.com" class="text-sm text-gray-300 hover:text-saffron transition-colors">support@divyajyotish.com</a>
+                            <a href="mailto:support@divyajyotish.com"
+                                class="text-sm text-gray-300 hover:text-saffron transition-colors">support@divyajyotish.com</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-map-marker-alt text-saffron text-sm"></i>
                             </div>
                             <span class="text-sm text-gray-300">Delhi, India</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-clock text-saffron text-sm"></i>
                             </div>
                             <span class="text-sm text-gray-300">24/7 Support Available</span>
@@ -921,12 +1038,15 @@
 
         <!-- Footer Bottom -->
         <div class="border-t border-white/10">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
                 <p class="text-xs sm:text-sm text-gray-400">© 2026 Divya Jyotish. All Rights Reserved.</p>
                 <div class="flex items-center gap-4">
-                    <a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-saffron transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-saffron transition-colors">Privacy
+                        Policy</a>
                     <span class="text-gray-600">|</span>
-                    <a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-saffron transition-colors">Terms & Conditions</a>
+                    <a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-saffron transition-colors">Terms &
+                        Conditions</a>
                 </div>
             </div>
         </div>
@@ -942,8 +1062,8 @@
         mobileMenuBtn.addEventListener('click', () => {
             isMenuOpen = !isMenuOpen;
             mobileMenu.classList.toggle('hidden');
-            mobileMenuBtn.innerHTML = isMenuOpen 
-                ? '<i class="fas fa-times text-xl"></i>' 
+            mobileMenuBtn.innerHTML = isMenuOpen
+                ? '<i class="fas fa-times text-xl"></i>'
                 : '<i class="fas fa-bars text-xl"></i>';
         });
 
@@ -956,22 +1076,6 @@
             });
         });
 
-        // Chat Widget Toggle
-        const chatWidget = document.getElementById('chatWidget');
-        const chatToggleBtn = document.getElementById('chatToggleBtn');
-        let isChatOpen = false;
-
-        function toggleChat() {
-            isChatOpen = !isChatOpen;
-            if (isChatOpen) {
-                chatWidget.classList.remove('hidden');
-                chatWidget.classList.add('fade-in-up');
-                chatToggleBtn.classList.add('hidden');
-            } else {
-                chatWidget.classList.add('hidden');
-                chatToggleBtn.classList.remove('hidden');
-            }
-        }
 
         // Navbar shadow on scroll
         window.addEventListener('scroll', () => {
@@ -1029,4 +1133,5 @@
     </script>
 
 </body>
+
 </html>
